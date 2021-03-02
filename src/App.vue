@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <the-header :title="title"></the-header>
+  <main-content></main-content>
+  <the-footer
+    :title="title"
+    :link="link"
+    :contributor="contributor"
+  ></the-footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHeader from './components/UI/TheHeader.vue';
+import MainContent from './components/content/MainContent.vue';
+import TheFooter from './components/UI/TheFooter.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    TheHeader,
+    MainContent,
+    TheFooter,
+  },
+  data() {
+    return {
+      title: 'Random Group Generator',
+      link: 'https://github.com/xredha',
+      contributor: 'Galih Redha Saputra',
+    };
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 </style>
