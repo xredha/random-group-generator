@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "lodash": "^4.17.21",
+    "lodash.chunk": "^4.2.0",
+    "lodash.shuffle": "^4.2.0",
     "vue": "^3.0.0"
   },
   "devDependencies": {

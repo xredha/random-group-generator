@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{title}} &copy; 2021. Created by <a :href="link" target="_blank">{{contributor}}</a>. Made with ❤️ and 🎨</p>
+    <p>{{title}} &copy; 2021. Created by <a :href="link" target="_blank">{{contributor}}</a>. Made with ❤️.</p>
   </div>
 </template>
 
