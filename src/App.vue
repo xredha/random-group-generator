@@ -1,8 +1,6 @@
 <template>
   <the-header :title="title"></the-header>
-  <main>
-    <main-content></main-content>
-  </main>
+  <main-content></main-content>
   <the-footer
     :title="title"
     :link="link"
@@ -37,9 +35,5 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-}
-
-main {
-  min-height: 80vh;
 }
 </style>
